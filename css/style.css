@@ -322,6 +322,7 @@ footer p:nth-child(2){
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	background-color: black;
 
 }
 .skills_head{
