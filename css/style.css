@@ -311,7 +311,7 @@ footer p:nth-child(2){
 	margin: 0;
 	box-sizing: border-box;
 	font-family: poppins;
-	/*background-color: #101010;*/
+
 }
 .skills_section{
 	width: 100%;
@@ -322,7 +322,7 @@ footer p:nth-child(2){
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background-color: #101010;
+
 }
 .skills_head{
 	width: 100%;
