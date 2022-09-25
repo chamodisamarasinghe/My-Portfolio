@@ -209,7 +209,7 @@ h5{
 	line-height: 27px;
 	margin-bottom: 25px;
 }
-.card .button{
+.button{
 	background-color:#f9004d;
 	color: white;
 	text-decoration: none;
@@ -469,7 +469,7 @@ footer p:nth-child(2){
 :root{
 	--bg-color: #020312;
 	--text-color: #fff;
-	--main-color: #eb4a4a;
+	--main-color: #f9004d;
 	--second-color: gray;
 	--other-color: #12141c;
 	--h1-font: 5.2rem;
