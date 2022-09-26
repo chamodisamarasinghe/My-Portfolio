@@ -663,77 +663,77 @@ header.sticky{
 
 
 
-.contact {
-	padding-top: 60px;
-	min-height: 100vh;
-	max-height: max-content;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	color: var(--text-color);
-}
-.contact h2 {
-	text-align: center;
-	font-size: 2.5rem;
-	color: var(--highlighted-color);
-	position: relative;
-}
-.contact h2::after {
-	content: "";
-	height: 2px;
-	width: 60%;
-	position: absolute;
-	bottom: -10px;
-	left: 20%;
-	background-color: var(--highlighted-color);
-}
-.contact-content {
-	width: 60%;
-}
-.contact-content form {
-	width: 100%;
-	min-height: 60vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	padding: 0 10px;
-}
-.contact-content form input,
-textarea {
-	color: var(--text-color);
-	background-color: transparent;
-	border: none;
-	border-bottom: 2px solid var(--highlighted-color);
-	outline: none;
-	width: 100%;
-	padding: 10px;
-	font-size: 1rem;
-	resize: none;
-	overflow-y: auto;
-	transition: 0.3s ease;
-}
-.contact-content form input:focus,
-textarea:focus {
-	border-bottom: 2px solid var(--text-color);
-}
-.contact-content form button {
-	height: 40px;
-	width: 100px;
-	outline: none;
-	border: 2px solid var(--highlighted-color);
-	background-color: var(--highlighted-color);
-	color: rgb(226, 226, 226);
-	font-size: 1.1rem;
-	border-radius: 10px;
-	transition: 0.3s ease;
-	cursor: pointer;
-	margin-top: 10px;
-}
-.contact-content form button:hover {
-	background-color: transparent;
-	color: var(--text-color);
-}
+/*.contact {*/
+/*	padding-top: 60px;*/
+/*	min-height: 100vh;*/
+/*	max-height: max-content;*/
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*	justify-content: space-around;*/
+/*	align-items: center;*/
+/*	color: var(--text-color);*/
+/*}*/
+/*.contact h2 {*/
+/*	text-align: center;*/
+/*	font-size: 2.5rem;*/
+/*	color: var(--highlighted-color);*/
+/*	position: relative;*/
+/*}*/
+/*.contact h2::after {*/
+/*	content: "";*/
+/*	height: 2px;*/
+/*	width: 60%;*/
+/*	position: absolute;*/
+/*	bottom: -10px;*/
+/*	left: 20%;*/
+/*	background-color: var(--highlighted-color);*/
+/*}*/
+/*.contact-content {*/
+/*	width: 60%;*/
+/*}*/
+/*.contact-content form {*/
+/*	width: 100%;*/
+/*	min-height: 60vh;*/
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*	justify-content: space-around;*/
+/*	padding: 0 10px;*/
+/*}*/
+/*.contact-content form input,*/
+/*textarea {*/
+/*	color: var(--text-color);*/
+/*	background-color: transparent;*/
+/*	border: none;*/
+/*	border-bottom: 2px solid var(--highlighted-color);*/
+/*	outline: none;*/
+/*	width: 100%;*/
+/*	padding: 10px;*/
+/*	font-size: 1rem;*/
+/*	resize: none;*/
+/*	overflow-y: auto;*/
+/*	transition: 0.3s ease;*/
+/*}*/
+/*.contact-content form input:focus,*/
+/*textarea:focus {*/
+/*	border-bottom: 2px solid var(--text-color);*/
+/*}*/
+/*.contact-content form button {*/
+/*	height: 40px;*/
+/*	width: 100px;*/
+/*	outline: none;*/
+/*	border: 2px solid var(--highlighted-color);*/
+/*	background-color: var(--highlighted-color);*/
+/*	color: rgb(226, 226, 226);*/
+/*	font-size: 1.1rem;*/
+/*	border-radius: 10px;*/
+/*	transition: 0.3s ease;*/
+/*	cursor: pointer;*/
+/*	margin-top: 10px;*/
+/*}*/
+/*.contact-content form button:hover {*/
+/*	background-color: transparent;*/
+/*	color: var(--text-color);*/
+/*}*/
 /*.contact-btn {*/
 /*	height: 40px;*/
 /*	width: 100px;*/
@@ -751,3 +751,55 @@ textarea:focus {
 /*	box-shadow: inset 100px 0 0 0 var(--highlighted-color);*/
 /*	color: rgb(226, 226, 226);*/
 /*}*/
+
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #f9004d;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #f9004d;
+}
+
+/* Style the container/contact section */
+.container {
+	border-radius: 5px;
+	background-color: black;
+	padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+	float: left;
+	width: 50%;
+	margin-top: 6px;
+	padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column, input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+}

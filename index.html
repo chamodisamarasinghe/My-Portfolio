@@ -70,7 +70,7 @@
 	<!-----service section start----------->
 	<div class="service">
 		<div class="title">
-			<h2>My Education</h2>
+			<h2 style="font-size: 50px">My Education</h2>
 		</div>
 
 		<div class="box">
@@ -368,26 +368,57 @@
 <!--		<a class="button-two" href="#">Hire Me</a>-->
 <!--	</div>-->
 
-	<section class="contact" id="contact">
-		<h2>Contact</h2>
-		<div class="contact-content">
-			<form action="">
-				<input type="text" name="" id="" placeholder="Your Name" />
-				<input type="email" name="" id="" placeholder="Your Email" />
-				<textarea
-						name=""
-						id=""
-						cols="30"
-						rows="10"
-						placeholder="Your Message"
-				></textarea>
-<!--				<button type="submit">Send</button>-->
-				<p style="text-align: center;">
-					<a class="button" href="">Send</a>
-				</p>
-			</form>
+<!--	<section class="contact" id="contact">-->
+<!--		<h2>Contact</h2>-->
+<!--		<div class="contact-content">-->
+<!--			<form action="">-->
+<!--				<input style="" type="text" name="" id="" placeholder="Your Name" />-->
+<!--				<input type="email" name="" id="" placeholder="Your Email" />-->
+<!--				<textarea-->
+<!--						name=""-->
+<!--						id=""-->
+<!--						cols="30"-->
+<!--						rows="10"-->
+<!--						placeholder="Your Message"-->
+<!--				></textarea>-->
+<!--&lt;!&ndash;				<button type="submit">Send</button>&ndash;&gt;-->
+<!--				<p style="text-align: center;">-->
+<!--					<a class="button" href="">Send</a>-->
+<!--				</p>-->
+<!--			</form>-->
+<!--		</div>-->
+<!--	</section>-->
+	<!-- contact section-->
+	<div class="container">
+		<div style="text-align:center">
+			<h2 style="font-size: 50px">Contact Us</h2>
+<!--			<p>Swing by for a cup of coffee, or leave us a message:</p>-->
 		</div>
-	</section>
+		<div class="row">
+			<div class="column">
+				<img src="img/galle.png" width="100%">
+			</div>
+			<div class="column">
+				<form action="/action_page.php">
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+					<label for="country">Country</label>
+					<select id="country" name="country">
+						<option value="Australia">Australia</option>
+						<option value="Sri Lanka">Canada</option>
+						<option value="USA">USA</option>
+					</select>
+					<label for="subject">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</div>
+
+
 
 
 
